@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    padding: 50px;
+    background-color: #26262d !important;
+}
+
+
+.main-row{
+    align-items: center;
+    position: relative;
+}
+/* Left-side */
+.left-side{
+    z-index: 10;
+}
+/* Card */
+.card{
+    padding: 50px;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px !important;
+    background: #31313a !important;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-top{
+    background: url(../img/bg.jpg) center / cover;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #31313a;
+    border-radius: 5px !important;
+}
+
+.card-top:before{
+    background: #31313a;
+    left: -25%;
+    bottom: -40%;
+    width: 100%;
+    height: 70%;
+    content: '';
+    position: absolute;
+    transform: rotate(15deg);
+}
+.card-top:after{
+    background: #31313a;
+    left: auto;
+    right: -25%;
+    bottom: -40%;
+    width: 100%;
+    height: 70%;
+    content: '';
+    position: absolute;
+    transform: rotate(-15deg);
+}
+
+.profile-photo{
+    z-index: 2;
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+}
+.profile-photo img{
+    width: 35%;
+    border-radius: 50%;
+    border: 3px solid #31313a;
+    z-index: 2;
+}
+.profile-photo-bg{
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    width: 35%;
+    height: 100%;
+    /* background: #78cc6d; */
+    background: rgba(0,0,0,0.6);
+    /* opacity: 0.3; */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.person-name{
+    z-index: 2;
+    margin: 10px;
+    text-align: center;
+}
+.person-name h1{
+    font-family: 'Poppins', sans-serif !important;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 25px;
+}
+.dev{
+    color: #78cc6d;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+
+/* Social networks */
+.social img{
+    width: 20px;
+    margin: 5px;
+}
+.social{
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+/* Card footer */
+.card-foot{
+    width: 100%;
+    background: #31313a !important;
+    position: relative;
+}
+.card-foot:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.card-foot a{
+    /* text-decoration: none;
+    padding-left: 100%;
+    padding-right: 100%;
+    text-align: center; */
+    width: 100% !important;
+    padding: 20px;
+    background-color: #31313a !important;
+    border-left: none !important;
+}
+.card-foot a:hover{
+    color: #78cc6d;
+    transition: .3s;
+}
+
+
+
+/* Right-side */
+.content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.right-side{
+    background: #31313a;
+    height: 550px;
+    position: absolute;
+    left: -15px;
+    z-index: 4;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 5px;
+}
+.title h1{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Poppins', sans-serif !important;
+}
+.title{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+.title:before{
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #78cc6d;
+    opacity: .3;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* About content */
+.about-content .col-lg-6{
+    padding: 25px !important;
+}
+.about-content p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.right-line{
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+/* About info */
+.about-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.green-block{
+    color: #fff !important;
+    background-color: #78CC6D;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 14px !important;
+}
+
+
+
+/* About services */
+.about-services{
+    padding: 20px;
+}
+.about-services-img{
+    width: 60px !important;
+}
+.about-services-title{
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.85);
+}
+.about-services-p{
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* Skills */
+
+.skills-img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.title{
+    margin-bottom: 40px;
+}
+
+
+
+
+.theme-img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Skills list */
+
+.skills-list div{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.skills-list p{
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.85)
+}
+.skills-list img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Contacts */
+.contacts-block p{
+    color: rgba(255, 255, 255, 0.55);
+}
+.contacts-block{
+    margin-bottom: 10px;
+}
+
+/* WEBKIT */
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: #31313a;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #8b8b8b;
+}
+
+
+
+
+/* MEDIA */
+@media (max-width: 992px){
+    .right-side{
+        left: 0px;
+        border-radius: 10px;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px){
+    .profile-photo img{
+        width: 50%;
+    }
+    .profile-photo-bg{
+        width: 50%;
+        left: 20%;
+    }
+}
+@media (max-width: 490px){
+    .profile-photo img{
+        width: 60%;
+    }
+    .profile-photo-bg{
+        width: 60%;
+        left: 15%;
+    }
+    .card{
+        padding: 30px;
+    }
+    body{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 420px){
+    .profile-photo{
+        margin-top: 160px;
+    }
+    .profile-photo img{
+        width: 60%;
+    }
+    .profile-photo-bg{
+        width: 60%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 380px){
+    .profile-photo{
+        margin-top: 120px;
+    }
+    .profile-photo img{
+        width: 60%;
+    }
+    .profile-photo-bg{
+        width: 60%;
+        left: 15%;
+    }
+    .person-name h1{
+        font-size: 22px;
+    }
+    .dev{
+        font-size: 14px;
+    }
+    .green-block{
+        font-size: 12px !important;
+    }
+    .about-content p{
+        font-size: 14px !important;
+    }
+    .about-services-title{
+        font-size: 1.1rem !important;
+    }
+    .about-services-p{
+        font-size: 14px;
+    }
+    .contacts-block p{
+        font-size: 14px;
+    }
+    .card-top{
+        height: 350px;
+    }
+    .card{
+        height: 550px;
+    }
+    .skills-list p{
+        font-size: 14px;
+    }
+    body{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 365px){
+    .profile-photo{
+        margin-top: 100px;
+    }
+    .profile-photo img{
+        width: 70%;
+    }
+    .profile-photo-bg{
+        width: 70%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 325px){
+    .profile-photo{
+        margin-top: 150px;
+    }
+    .profile-photo img{
+        width: 70%;
+    }
+    .profile-photo-bg{
+        width: 70%;
+        left: 10%;
+    }
+}
